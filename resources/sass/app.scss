@@ -1,0 +1,23 @@
+@import '~bootstrap/scss/bootstrap';
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir.eot') format('eot'), url('../fonts/Vazir.ttf') format('ttf'), url('../fonts/Vazir.woff') format('woff'), url('../fonts/Vazir.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Vazir';
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .35rem;
+    border-bottom-right-radius: .35rem;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: .35rem;
+    border-bottom-left-radius: .35rem;
+}
