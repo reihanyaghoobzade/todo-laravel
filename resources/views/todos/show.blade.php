@@ -11,8 +11,9 @@
                         {{ $todo->description }}
                     </div>
                     <div class="card-footer d-flex">
-                        <a href="{{ route('todos.edit', ['todo' => $todo->id]) }}" class="btn btn-sm btn-outline-dark">نمایش</a>
-                        <form class="me-2" action="{{ route('todos.delete', ['todo' => $todo->id]) }}">
+                        <a href="{{ route('todos.edit', ['todo' => $todo->id]) }}"
+                            class="btn btn-sm btn-outline-dark">نمایش</a>
+                        <form class="me-2" action="{{ route('todos.destroy', ['todo' => $todo->id]) }}">
                             @csrf
                             @method('delete')
                             <button class="btn btn-sm btn-danger">حذف</button>
