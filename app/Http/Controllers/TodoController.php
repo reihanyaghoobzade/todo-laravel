@@ -107,7 +107,6 @@ class TodoController extends Controller
      */
     public function destroy(Todo $todo)
     {
-        // dd($todo);
         $todo->delete();
 
         alert()->error('دقت کنید','تسک با موفقیت حذف شد');
@@ -124,8 +123,6 @@ class TodoController extends Controller
     public function compelete(Todo $todo)
     {
         $todo->update(['is_complete' => 1]);
-
-        // dd($todo);
 
         alert()->info('توجه کنید','تسک مورد نظر انجام شد!');
 
